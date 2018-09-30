@@ -1,13 +1,11 @@
 <template>
     <div class="row">
-        <div class="container-fluid">
-            <form action="">
-                <div class="col-md-8 col-md-offset-1">
-                    <textarea v-model="quote" required class="form-control" 
-                        id="" cols="30" rows="10" placeholder="Create New Quote" @keyup.enter.prevent="createQuote"></textarea>
-                </div>
-            </form>
-        </div>
+      <div class="container-fluid">
+          <form action="">
+              <textarea v-model="quote" required class="form-control" 
+                  id="" cols="30" rows="10" placeholder="Create New Quote" @keyup.enter.prevent="createQuote"></textarea>
+          </form>
+      </div>
     </div>
 </template>
 

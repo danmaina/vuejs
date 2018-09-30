@@ -1,6 +1,6 @@
 <template>
-    <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="panel panel-default">
+    <div class="col-md-4">
+      <div class="panel panel-info">
         <div class="panel-body quote">
           <slot></slot>
         </div>
@@ -14,10 +14,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .panel-body {
-  font-family: "arizonia", cursive;
-  font-size: 24px;
+  font-family: "arizona", cursive;
+  font-size: 1.5em;
   color: #6e6e6e;
 }
 
@@ -27,5 +27,9 @@ export default {
 
 .quote:hover {
   background-color: #ffe2e2;
+}
+
+.panel-body {
+  word-break: break-all;
 }
 </style>
